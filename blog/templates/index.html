@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %} Главная страница {% endblock %}
+
+{% block content %}
+{% for post in posts%}
+    {{ post.title }}<br>
+<img src="{{ post.image.url }}" alt=""><br>
+{% endfor %}
+{% endblock %}
